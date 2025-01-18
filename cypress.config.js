@@ -6,7 +6,7 @@ module.exports = defineConfig({
     viewportHeight: 720, // Define a altura da janela do navegador durante o teste
     watchForFileChanges: false, // Desativa o monitoramento de alterações nos arquivos de teste
     specPattern: "cypress/e2e/**/*.feature", // Localização dos arquivos de teste com extensão .feature
-
+    baseUrl : "https://sampleapp.tricentis.com/101",
     setupNodeEvents(on, config) {
       const cucumber = require("cypress-cucumber-preprocessor").default;
       on("file:preprocessor", cucumber()); // Configura o pré-processador para os arquivos .feature

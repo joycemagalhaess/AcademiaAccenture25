@@ -1,5 +1,5 @@
 Given('estou na página do formulário de registro de veículo', () => {
-    cy.visit('https://sampleapp.tricentis.com/101/app.php')
+    cy.visit('/app.php')
 
 })
 
